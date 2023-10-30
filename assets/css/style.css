@@ -1,0 +1,39 @@
+.gallery {
+    position: relative;
+}
+
+.descr {
+    position: absolute;
+    bottom: 10px;
+    color: whitesmoke;
+    font-size: 180%;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    line-height: 0;
+}
+
+#pictures {
+    line-height: 1em;
+}
+ 
+/* Media query: tables and larger (576px and up) */
+@media screen and (min-width:576px) {
+    #pictures {
+        column-count: 2;
+        column-gap: 0;
+    }
+
+
+/* Media query: laptops and larer (992px and up) */
+@media screen and (min-width:992px) {
+    #pictures {
+        column-count: 3;
+        column-gap: 0;
+    }
+}
